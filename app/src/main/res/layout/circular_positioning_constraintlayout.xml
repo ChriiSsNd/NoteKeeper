@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButtonShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_share_24" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButtonEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_baseline_email_24"
+        app:layout_constraintCircle="@id/floatingActionButtonShare"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintCircleAngle="90"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="22dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_baseline_get_app_24"
+        app:layout_constraintCircle="@id/floatingActionButtonShare"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintCircleAngle="135"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="117dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButtonMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_baseline_message_24"
+        app:layout_constraintCircle="@id/floatingActionButtonShare"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintCircleAngle="180"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="142dp" />
+</android.support.constraint.ConstraintLayout>
