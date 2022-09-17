@@ -3,8 +3,8 @@ package com.clnn.notekeeper
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.widget.ArrayAdapter
-import android.widget.ListView
+import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
 import com.clnn.notekeeper.databinding.ActivityNoteListBinding
 
 class NoteListActivity : AppCompatActivity() {
@@ -19,15 +19,8 @@ class NoteListActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.toolbar)
 
-        findViewById<ListView>(R.id.listNotes).adapter = ArrayAdapter(this,
-            android.R.layout.simple_list_item_1,
-             DataManager.notes)
-
-        findViewById<ListView>(R.id.listNotes).setOnItemClickListener {parent, view, position, id ->
-            val activityIntent = Intent(this, MainActivity::class.java)
-            activityIntent.putExtra(NOTE_POSITION, position)
-            startActivity(activityIntent)
-        }
+        findViewById<RecyclerView>(R.id.listItems).layoutManager = LinearLayoutManager(this)
+        findViewById<RecyclerView>(R.id.listItems).adapter = NoteRecyclerAdapter(this, DataManager.notes)
 
         binding.fab.setOnClickListener { view ->
             val activityIntent = Intent(this, MainActivity::class.java)
@@ -37,6 +30,6 @@ class NoteListActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        (findViewById<ListView>(R.id.listNotes).adapter as ArrayAdapter<NoteInfo>).notifyDataSetChanged()
+        findViewById<RecyclerView>(R.id.listItems).adapter?.notifyDataSetChanged()
     }
 }
