@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Users/jordi/AndroidStudioProjects/NoteKeeper/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.2065" />
         <entry key="..\:/Users/jordi/AndroidStudioProjects/NoteKeeper/app/src/main/res/drawable/ic_baseline_message_24.xml" value="0.2065" />
+        <entry key="..\:/Users/jordi/AndroidStudioProjects/NoteKeeper/app/src/main/res/drawable/side_band.xml" value="0.1145" />
         <entry key="..\:/Users/jordi/AndroidStudioProjects/NoteKeeper/app/src/main/res/font/pluralsight_font.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/jordi/AndroidStudioProjects/NoteKeeper/app/src/main/res/layout/activity_items.xml" value="0.21944444444444444" />
         <entry key="..\:/Users/jordi/AndroidStudioProjects/NoteKeeper/app/src/main/res/layout/activity_main.xml" value="0.22" />
@@ -21,7 +22,7 @@
         <entry key="..\:/Users/jordi/AndroidStudioProjects/NoteKeeper/app/src/main/res/layout/fragment_home.xml" value="0.2" />
         <entry key="..\:/Users/jordi/AndroidStudioProjects/NoteKeeper/app/src/main/res/layout/fragment_slideshow.xml" value="0.2" />
         <entry key="..\:/Users/jordi/AndroidStudioProjects/NoteKeeper/app/src/main/res/layout/item_course_list.xml" value="0.22" />
-        <entry key="..\:/Users/jordi/AndroidStudioProjects/NoteKeeper/app/src/main/res/layout/item_note_list.xml" value="0.22" />
+        <entry key="..\:/Users/jordi/AndroidStudioProjects/NoteKeeper/app/src/main/res/layout/item_note_list.xml" value="0.4466666666666667" />
         <entry key="..\:/Users/jordi/AndroidStudioProjects/NoteKeeper/app/src/main/res/layout/nav_header_items.xml" value="0.22" />
         <entry key="..\:/Users/jordi/AndroidStudioProjects/NoteKeeper/app/src/main/res/layout/ratio_constraintlayout.xml" value="0.22" />
         <entry key="..\:/Users/jordi/AndroidStudioProjects/NoteKeeper/app/src/main/res/layout/using_guideline_on_constraintlayout.xml" value="0.22" />
