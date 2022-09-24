@@ -1,6 +1,7 @@
 package com.clnn.notekeeper
 
 import android.content.Intent
+import android.content.res.Resources
 import android.os.Bundle
 import android.view.Menu
 import android.support.design.widget.NavigationView
@@ -31,7 +32,7 @@ class ItemsActivity : AppCompatActivity() {
     private val noteRecyclerAdapter by lazy { NoteRecyclerAdapter(this, DataManager.notes) }
 
     private val courseLayoutManager by lazy {
-        GridLayoutManager(this, 2)
+        GridLayoutManager(this, resources.getInteger(R.integer.course_grid_span))
     }
 
     private val courseRecyclerViewAdapter by lazy {

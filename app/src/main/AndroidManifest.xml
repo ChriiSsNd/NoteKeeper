@@ -33,7 +33,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="Edit Note"
+            android:label="@string/note_edit_label"
             android:theme="@style/Theme.NoteKeeper.NoActionBar" />
     </application>
 
