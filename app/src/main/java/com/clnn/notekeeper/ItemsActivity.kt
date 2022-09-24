@@ -1,7 +1,7 @@
 package com.clnn.notekeeper
 
+import android.annotation.SuppressLint
 import android.content.Intent
-import android.content.res.Resources
 import android.os.Bundle
 import android.view.Menu
 import android.support.design.widget.NavigationView
@@ -47,7 +47,7 @@ class ItemsActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.appBarItems.toolbar)
 
-        binding.appBarItems.fab.setOnClickListener { view ->
+        binding.appBarItems.fab.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
         }
 
@@ -66,11 +66,11 @@ class ItemsActivity : AppCompatActivity() {
             when(it.itemId) {
                 R.id.nav_notes -> {
                     displayNotes()
-                    handleSelection("Vous avez sélection la liste des notes")
+                    handleSelection(getString(R.string.nav_notes_string))
                 }
                 R.id.nav_courses -> {
                     displayCourses()
-                    handleSelection("Vous avez sélection la liste des cours")
+                    handleSelection(getString(R.string.nav_courses_string))
                 }
             }
             return@setNavigationItemSelectedListener true
@@ -91,10 +91,11 @@ class ItemsActivity : AppCompatActivity() {
         navView.menu.findItem(R.id.nav_courses).isChecked = true
     }
 
-    private fun handleSelection(message: String) {
-        Snackbar.make(findViewById(R.id.listItems),message, Snackbar.LENGTH_LONG).show()
+    private fun handleSelection(stringId: Int) {
+        Snackbar.make(findViewById(R.id.listItems),stringId, Snackbar.LENGTH_LONG).show()
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     override fun onResume() {
         super.onResume()
         findViewById<RecyclerView>(R.id.listItems).adapter?.notifyDataSetChanged()

@@ -22,4 +22,6 @@
     <string name="note_edit_label">Edit Note</string>
     <string name="note_text_hint">Note Text</string>
     <string name="note_title_hint">Note Title</string>
+    <string name="nav_notes_string">Vous avez sélection la liste des notes</string>
+    <string name="nav_courses_string">Vous avez sélection la liste des cours</string>
 </resources>
