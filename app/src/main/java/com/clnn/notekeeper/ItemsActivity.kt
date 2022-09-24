@@ -66,11 +66,12 @@ class ItemsActivity : AppCompatActivity() {
             when(it.itemId) {
                 R.id.nav_notes -> {
                     displayNotes()
-                    handleSelection(getString(R.string.nav_notes_string))
+                    handleSelection(R.string.nav_notes_string)
                 }
+
                 R.id.nav_courses -> {
                     displayCourses()
-                    handleSelection(getString(R.string.nav_courses_string))
+                    handleSelection(R.string.nav_courses_string)
                 }
             }
             return@setNavigationItemSelectedListener true
