@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NoteKeeper</string>
+    <string name="menu_courses">Cours</string>
+    <string name="note_edit_label">Modifier la note</string>
+    <string name="note_text_hint">Texte de la note</string>
+</resources>
