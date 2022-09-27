@@ -68,10 +68,13 @@ class ItemsActivity : AppCompatActivity() {
                     displayNotes()
                     handleSelection(R.string.nav_notes_string)
                 }
-
                 R.id.nav_courses -> {
                     displayCourses()
                     handleSelection(R.string.nav_courses_string)
+                }
+                R.id.nav_how_many -> {
+                    val message = getString(R.string.nav_how_many_string, DataManager.notes.size, DataManager.courses.size)
+                    Snackbar.make(findViewById<RecyclerView>(R.id.listItems),message,Snackbar.LENGTH_LONG).show()
                 }
             }
             return@setNavigationItemSelectedListener true

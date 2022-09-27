@@ -13,5 +13,9 @@
             android:id="@+id/nav_courses"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/menu_courses" />
+        <item
+            android:id="@+id/nav_how_many"
+            android:icon="@drawable/ic_baseline_help_24"
+            android:title="@string/nav_how_many" />
     </group>
 </menu>
