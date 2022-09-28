@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- inheriting a framework style-->
+    <style name="TitleCourse" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/pluralsight_orange</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- inheriting a project style, first method-->
+    <style name="NameCourse" parent="TitleCourse">
+    </style>
+
+    <!-- inheriting a project style, second method-->
+    <style name="TitleCourse.NameTitle">
+    </style>
+
+    <style name="AddFab" parent="@style/Widget.Design.FloatingActionButton">
+        <item name="android:layout_marginEnd">@dimen/fab_margin</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="srcCompat">@drawable/ic_baseline_create_24</item>
+    </style>
+</resources>
